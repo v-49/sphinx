@@ -81,7 +81,7 @@ cd RNAFusion
 This project uses Sphinx to generate documentation. Install the necessary dependencies using:
 
 ```bash
-pip install -r requirements.txt
+pip install all the requirements such as sphinx phython3 and etc..
 ```
 
 3. Build the Documentation Locally
