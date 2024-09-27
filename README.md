@@ -71,7 +71,7 @@ You can build the documentation locally using the following command:
 make html
 The generated HTML files will be in the _build/html directory. Open the index.html file in a browser to view the project documentation.
 
-Dependencies
+## Dependencies
 Python 3.6+
 Sphinx: Documentation generator.
 sphinx_rtd_theme: Read the Docs theme for Sphinx.
@@ -87,15 +87,15 @@ Run Sphinx to generate the documentation:
 make html
 Open _build/html/index.html to view the documentation locally.
 
-Contributing
+## Contributing
 Contributions are welcome! If you would like to contribute to this project, please follow these steps:
 
-Fork the repository.
+## Fork the repository.
 Create a new branch: git checkout -b feature-branch-name.
 Make your changes and commit them: git commit -m 'Add some feature'.
 Push to the branch: git push origin feature-branch-name.
 Open a pull request.
-License
+## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 
