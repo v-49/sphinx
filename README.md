@@ -1,4 +1,9 @@
+
+
+```markdown
 # RNAFusion - 15 RNA Velocity Analysis Tools
+
+[RNAFusion](./source/images/ph1.png)
 
 Welcome to **RNAFusion**, a comprehensive collection and comparison of 15 state-of-the-art RNA velocity analysis tools. This project integrates methods across multiple categories including machine learning models, deep learning frameworks, and statistical models for RNA velocity inference. Each method is well-documented and includes links to their respective GitHub repositories, along with detailed instructions and descriptions.
 
@@ -41,63 +46,90 @@ Each tool is documented with:
 - Core algorithms.
 - Key innovations and features.
 - Links to research papers and GitHub repositories.
+```
 
+
+
+```markdown
 ## Project Structure
 
 The project is structured as follows:
 
-. ├── docs/ # Sphinx documentation source files │ ├── _static/ # Static files for styling and customization │ ├── _templates/ # HTML templates │ ├── projects/ # RST files for each RNA velocity tool │ └── index.rst # Main Sphinx documentation page ├── source/ # Source code and configuration files │ └── conf.py # Sphinx configuration file ├── images/ # Image assets for the documentation ├── README.md # Project readme file └── requirements.txt # Python dependencies file
-
-
+```
+.
+├── docs/                # Sphinx documentation source files
+│   ├── _static/         # Static files for styling and customization
+│   ├── _templates/      # HTML templates
+│   ├── projects/        # RST files for each RNA velocity tool
+│   └── index.rst        # Main Sphinx documentation page
+├── source/              # Source code and configuration files
+│   └── conf.py          # Sphinx configuration file
+├── images/              # Image assets for the documentation
+├── README.md            # Project readme file
+└── requirements.txt     # Python dependencies file
+```
 
 ## Getting Started
 
- 1. Clone the Repository
+1. Clone the Repository
 
 To get a local copy of the repository, use:
 
 ```bash
 git clone https://github.com/your_username/RNAFusion.git
 cd RNAFusion
+```
+
 2. Install Dependencies
+
 This project uses Sphinx to generate documentation. Install the necessary dependencies using:
 
-
+```bash
 pip install -r requirements.txt
+```
+
 3. Build the Documentation Locally
+
 You can build the documentation locally using the following command:
 
-
+```bash
 make html
-The generated HTML files will be in the _build/html directory. Open the index.html file in a browser to view the project documentation.
+```
+
+The generated HTML files will be in the `_build/html` directory. Open the `index.html` file in a browser to view the project documentation.
 
 ## Dependencies
-Python 3.6+
-Sphinx: Documentation generator.
-sphinx_rtd_theme: Read the Docs theme for Sphinx.
-Other tools: See requirements.txt.
-Running Locally
+
+- Python 3.6+
+- Sphinx: Documentation generator.
+- sphinx_rtd_theme: Read the Docs theme for Sphinx.
+- Other tools: See `requirements.txt`.
+
+## Running Locally
+
 Ensure you have Python and pip installed.
 
-Install the dependencies using pip install -r requirements.txt.
+Install the dependencies using `pip install -r requirements.txt`.
 
 Run Sphinx to generate the documentation:
 
-
+```bash
 make html
-Open _build/html/index.html to view the documentation locally.
+```
+
+Open `_build/html/index.html` to view the documentation locally.
 
 ## Contributing
+
 Contributions are welcome! If you would like to contribute to this project, please follow these steps:
 
-## Fork the repository.
-Create a new branch: git checkout -b feature-branch-name.
-Make your changes and commit them: git commit -m 'Add some feature'.
-Push to the branch: git push origin feature-branch-name.
-Open a pull request.
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature-branch-name`.
+3. Make your changes and commit them: `git commit -m 'Add some feature'`.
+4. Push to the branch: `git push origin feature-branch-name`.
+5. Open a pull request.
+
 ## License
+
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-
-
-
+```
