@@ -51,7 +51,7 @@ Each tool is documented with:
 
 The project is structured as follows:
 
-
+```
 .
 ├── docs/                # Sphinx documentation source files
 │   ├── _static/         # Static files for styling and customization
@@ -63,7 +63,7 @@ The project is structured as follows:
 ├── images/              # Image assets for the documentation
 ├── README.md            # Project readme file
 └── requirements.txt     # Python dependencies file
-
+```
 
 ## Getting Started
 
