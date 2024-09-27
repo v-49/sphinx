@@ -51,7 +51,7 @@ Each tool is documented with:
 
 The project is structured as follows:
 
-
+```
 .
 ├── docs/                # Sphinx documentation source files
 │   ├── _static/         # Static files for styling and customization
