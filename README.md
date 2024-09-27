@@ -52,7 +52,7 @@ The project is structured as follows:
 
 ## Getting Started
 
-### 1. Clone the Repository
+ 1. Clone the Repository
 
 To get a local copy of the repository, use:
 
