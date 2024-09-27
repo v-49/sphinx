@@ -48,8 +48,7 @@ The project is structured as follows:
 
 . ├── docs/ # Sphinx documentation source files │ ├── _static/ # Static files for styling and customization │ ├── _templates/ # HTML templates │ ├── projects/ # RST files for each RNA velocity tool │ └── index.rst # Main Sphinx documentation page ├── source/ # Source code and configuration files │ └── conf.py # Sphinx configuration file ├── images/ # Image assets for the documentation ├── README.md # Project readme file └── requirements.txt # Python dependencies file
 
-bash
-复制代码
+
 
 ## Getting Started
 
@@ -63,14 +62,12 @@ cd RNAFusion
 2. Install Dependencies
 This project uses Sphinx to generate documentation. Install the necessary dependencies using:
 
-bash
-复制代码
+
 pip install -r requirements.txt
 3. Build the Documentation Locally
 You can build the documentation locally using the following command:
 
-bash
-复制代码
+
 make html
 The generated HTML files will be in the _build/html directory. Open the index.html file in a browser to view the project documentation.
 
@@ -86,8 +83,7 @@ Install the dependencies using pip install -r requirements.txt.
 
 Run Sphinx to generate the documentation:
 
-bash
-复制代码
+
 make html
 Open _build/html/index.html to view the documentation locally.
 
@@ -102,15 +98,6 @@ Open a pull request.
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-markdown
-复制代码
 
-### 说明：
 
-1. **项目简介**：提供了项目的目的，即将15个RNA velocity工具结合在一起，并且使用Sphinx生成项目文档。
-2. **项目结构**：概述了项目的文件夹和文件结构，帮助用户理解各个部分的功能。
-3. **运行指南**：包括如何克隆项目、安装依赖项并生成文档的步骤。
-4. **贡献指南**：说明了如何为项目做贡献，并提交 pull request。
-5. **许可协议**：指向项目的许可证文件，您可以根据需要选择合适的开源许可证。
 
-这个 `README.md` 文件为用户提供了清晰的项目介绍和操作指南，帮助他们快速了解项目内容并在本地运行
