@@ -13,5 +13,5 @@ sphinx:
   configuration: source/conf.py  # 指定 conf.py 文件的位置
 
 # 构建 HTML 文档
-formats:
-  - html
+#formats:
+#  - html
