@@ -1,0 +1,17 @@
+# .readthedocs.yaml
+
+version: 2
+
+# 设置 Python 版本
+python:
+  version: 3.8
+  install:
+    - requirements: requirements.txt
+
+# 设置 Sphinx 构建的目录
+sphinx:
+  configuration: source/conf.py  # 指定 conf.py 文件的位置
+
+# 构建 HTML 文档
+formats:
+  - html
