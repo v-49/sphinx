@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'RNAFusion'
+project = 'RNAgif'
 copyright = '2024, 49'
 author = '49'
 
