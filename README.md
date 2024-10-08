@@ -1,8 +1,8 @@
-# RNAFusion - 15 RNA Velocity Analysis Tools
+# RNAgif - 15 RNA Velocity Analysis Tools
 
-![RNAFusion](./source/images/ph1.png)
+![RNAgif](./source/images/ph1.png)
 
-Welcome to **RNAFusion**, a comprehensive collection and comparison of 15 state-of-the-art RNA velocity analysis tools. This project integrates methods across multiple categories including machine learning models, deep learning frameworks, and statistical models for RNA velocity inference. Each method is well-documented and includes links to their respective GitHub repositories, along with detailed instructions and descriptions.
+Welcome to **RNAgif**, a comprehensive collection and comparison of 15 state-of-the-art RNA velocity analysis tools. This project integrates methods across multiple categories including machine learning models, deep learning frameworks, and statistical models for RNA velocity inference. Each method is well-documented and includes links to their respective GitHub repositories, along with detailed instructions and descriptions.
 
 ## Table of Contents
 - [About RNAFusion](#about-rnafusion)
@@ -14,7 +14,7 @@ Welcome to **RNAFusion**, a comprehensive collection and comparison of 15 state-
 - [Contributing](#contributing)
 - [License](#license)
 
-## About RNAFusion
+## About RNAgif
 
 RNAFusion provides a unified platform for exploring and analyzing RNA velocity tools. These tools help predict cellular dynamics and understand gene expression regulation. Our project includes an interactive Sphinx-generated website that allows users to browse through various methods, view key innovations, and access the respective research papers and repositories.
 
