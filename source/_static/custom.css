@@ -1,0 +1,42 @@
+.image-text-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.image-container, .text-container {
+    flex: 1;
+}
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.text-container {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+
+.wy-nav-content-wrap {
+    padding-right: 100px; /* 根据需要调整数值，例如300px */
+}
+
+/* 2. 确保内容区域填满剩余空间 */
+.wy-nav-content {
+    max-width: none !important;
+    width: auto !important;
+}
+
+.spacer {
+    display: block;         /* 确保元素为块级元素 */
+    height: 50px;           /* 设置高度为50像素 */
+    margin: 0;              /* 重置默认外边距 */
+}
+
+/* 定义 spacer100 类以增加上下间距 */
+.spacer100 {
+    display: block;          /* 确保元素为块级元素 */
+    height: 100px;           /* 设置高度为100像素 */
+    margin: 0;               /* 重置默认外边距 */
+}
