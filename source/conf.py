@@ -32,17 +32,16 @@ html_show_sourcelink = False
 
 html_static_path = ['_static']
 html_css_files = [
-    'custom.css',
+    'css/custom.css',
+]
+html_js_files = [
+    'js/custom.js',
 ]
 # 使用 html_context 配置 GitHub 集成
 html_context = {
     'display_github': True,  # 启用 GitHub 链接
-    'github_user': 'v-49',    # GitHub 用户名
-    'github_repo': 'sphinx',  # GitHub 仓库名
+    'github_user': 'liyarubio',    # GitHub 用户名
+    'github_repo': 'VeloGIF',  # GitHub 仓库名
     'github_version': 'main/',  # 分支及文档路径
     'conf_py_path': '/source/',  # 配置文件路径
 }
-
-# 自定义 CSS
-def setup(app):
-    app.add_css_file('custom.css')

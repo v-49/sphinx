@@ -40,3 +40,20 @@
     height: 100px;           /* 设置高度为100像素 */
     margin: 0;               /* 重置默认外边距 */
 }
+
+.green-bold {
+    color: green;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+.large-text {
+    font-size: 1.3em; /* 根据需要调整大小 */
+    color: inherit; /* 保持默认颜色，可以根据需要修改 */
+    font-weight: normal; /* 根据需要调整字体粗细 */
+}
+.mid-text {
+    font-size: 1.1em; /* 根据需要调整大小 */
+    color: inherit; /* 保持默认颜色，可以根据需要修改 */
+    font-weight: normal; /* 根据需要调整字体粗细 */
+    line-height: 0.7em /* 调整行间距，值越小行间距越小 */
+}
