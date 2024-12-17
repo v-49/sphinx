@@ -86,7 +86,7 @@ Methods Introduction
      - √
      - TensorFlow
      - 
-   * - `DeepVelo (2022) <https://github.com/aicb-ZhangLabs/deepvelo>`_
+   * - `DeepVelo (VAE-based) <https://github.com/aicb-ZhangLabs/deepvelo>`_
      - 2022
      - Science Advances
      - √
@@ -136,7 +136,7 @@ Methods Introduction
      - 
      - Torch
      - 
-   * - `DeepVelo (2024) <https://github.com/bowang-lab/DeepVelo>`_
+   * - `DeepVelo (GCN-based) <https://github.com/bowang-lab/DeepVelo>`_
      - 2024
      - Genome Biology
      - √
