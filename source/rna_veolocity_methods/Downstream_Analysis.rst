@@ -1,29 +1,106 @@
 Downstream Analysis
 ============================================
 
+.. note:: All "√" symbols in the table are clickable links that will redirect you to the corresponding documentation, tutorials, or example notebooks for each tool.
+
 .. raw:: html
 
-    <div style="width: 100%; overflow-x: auto;">
-    <table border="1" cellspacing="0" cellpadding="5">
+    <style>
+        /* 表格容器样式 */
+    .wy-table-responsive {
+        margin: 20px 0;
+        overflow: visible;  /* 改为visible以避免出现双滚动条 */
+        position: relative;
+    }
+
+    /* 表格主体样式 */
+    .custom-table-container {
+        max-height: 80vh;
+        overflow-y: auto;
+        overflow-x: auto;
+        position: relative;
+        margin-bottom: 24px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    /* 美化滚动条 */
+    .custom-table-container::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
+
+    .custom-table-container::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 5px;
+    }
+
+    .custom-table-container::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 5px;
+    }
+
+    .custom-table-container::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+    /* 保持其他原有样式 */
+    .custom-table {
+        width: 100%;
+        border-collapse: collapse;
+        position: relative;
+    }
+
+    .custom-table th, .custom-table td {
+        text-align: center;
+        vertical-align: middle;
+        padding: 8px;
+        border: 1px solid #ddd;
+        min-width: 100px;
+    }
+
+    /* 固定表头和第一列的样式保持不变 */
+    .custom-table thead tr th {
+        position: sticky;
+        top: 0;
+        background: white;
+        z-index: 2;
+    }
+
+    .custom-table td:first-of-type {
+        position: sticky;
+        left: 0;
+        background: white;
+        z-index: 1;
+        border: 1px solid #ddd;
+        min-width: 150px;
+        max-width: 200px;
+        white-space: normal;
+        box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    }
+
+    </style>
+    <div class="custom-table-container">
+    <table class="custom-table">
         <thead>
             <tr>
-                <td>all</td>
-                <td>name</td>
-                <td>velocyto</td>
-                <td>scVelo</td>
-                <td>VeloAE</td>
-                <td>dynamo</td>
-                <td>VeloVAE</td>
-                <td>MultiVelo</td>
-                <td>UniTVelo</td>
-                <td>DeepVelo (VAE)</td>
-                <td>cellDancer</td>
-                <td>PhyloVelo</td>
-                <td>veloVI</td>
-                <td>LatentVelo</td>
-                <td>DeepVelo (GCN)</td>
-                <td>TFvelo</td>
-                <td>STT</td>
+                <th></th>
+                <th></th>
+                <th>velocyto</th>
+                <th>scVelo</th>
+                <th>VeloAE</th>
+                <th>dynamo</th>
+                <th>VeloVAE</th>
+                <th>MultiVelo</th>
+                <th>UniTVelo</th>
+                <th>DeepVelo (VAE)</th>
+                <th>cellDancer</th>
+                <th>PhyloVelo</th>
+                <th>veloVI</th>
+                <th>LatentVelo</th>
+                <th>DeepVelo (GCN)</th>
+                <th>TFvelo</th>
+                <th>STT</th>
             </tr>
         </thead>
         <tbody>
@@ -31,7 +108,7 @@ Downstream Analysis
             <tr>
                 <th rowspan="10">Basic Function</th>
                 <td>compute u & s exp matrix</td>
-                <td><a href="https://scvelo.readthedocs.io/en/stable/DynamicalModeling.html">√</a></td>
+                <td><a href="http://velocyto.org/velocyto.py/tutorial/cli.html#running-velocyto">√</a></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -50,7 +127,7 @@ Downstream Analysis
             <tr>
                 <td>filter and normalize</td>
                 <td><a href="http://velocyto.org/velocyto.py/tutorial/analysis.html#start-a-new-analysis-preliminary-filtering">√</a></td>
-                <td><a href="https://github.com/velocyto-team/velocyto-notebooks/blob/master/python/DentateGyrus.ipynb">√</a></td>
+                <td><a href="https://scvelo.readthedocs.io/en/stable/VelocityBasics.html#Preprocess-the-Data">√</a></td>
                 <td></td>
                 <td><a href="https://dynamo-release.readthedocs.io/en/latest/ten_minutes_to_dynamo.html#preprocess-data">√</a></td>
                 <td><a href="https://github.com/welch-lab/VeloVAE/blob/master/notebooks/velovae_example.ipynb">√</a></td>
@@ -68,7 +145,7 @@ Downstream Analysis
             <tr>
                 <td>compute cell x gene velocity matrix</td>
                 <td><a href="http://velocyto.org/velocyto.py/tutorial/analysis.html#gamma-fit-and-extrapolation">√</a></td>
-                <td><a href="https://scvelo.readthedocs.io/en/stable/DynamicalModeling.html">√</a></td>
+                <td><a href="https://scvelo.readthedocs.io/en/stable/VelocityBasics.html#Estimate-RNA-velocity">√</a></td>
                 <td></td>
                 <td><a href="https://dynamo-release.readthedocs.io/en/latest/ten_minutes_to_dynamo.html#velocity-vectors">√</a></td>
                 <td><a href="https://github.com/welch-lab/VeloVAE/blob/master/notebooks/velovae_example.ipynb">√</a></td>
@@ -102,7 +179,7 @@ Downstream Analysis
                 <td><a href="https://github.com/cliffzhou92/STT/blob/release/example_notebooks/example-bone-marrow.ipynb">√</a></td>
             </tr>
             <tr>
-                <td>simulatite data</td>
+                <td>simulate data</td>
                 <td></td>
                 <td><a href="https://github.com/theislab/scvelo_notebooks/blob/master/perspectives/Perspectives_parameters.ipynb">√</a></td>
                 <td></td>
@@ -158,7 +235,7 @@ Downstream Analysis
             <tr>
                 <td>compute pseudotime / latent time</td>
                 <td><a href="https://github.com/velocyto-team/velocyto-notebooks/blob/master/python/hgForebrainGlutamatergic.ipynb">√</a></td>
-                <td><a href="https://scvelo.readthedocs.io/en/stable/scvelo.utils.get_transition_matrix.html#scvelo.utils.get_transition_matrix">√</a></td>
+                <td><a href="https://scvelo.readthedocs.io/en/stable/DynamicalModeling.html#Latent-time">√</a></td>
                 <td></td>
                 <td></td>
                 <td><a href="https://github.com/welch-lab/VeloVAE/blob/master/notebooks/velovae_example.ipynb">√</a></td>
@@ -166,7 +243,7 @@ Downstream Analysis
                 <td></td>
                 <td></td>
                 <td><a href="https://guangyuwanglab2021.github.io/cellDancer_website/notebooks/case_study_gastrulation.html">√</a></td>
-                <td><a href="https://github.com/kunwang34/PhyloVelo/blob/c46fc3223b27c5edfd737878bde4ddbc7e634b9b/docs/source/notebook/getting_start.ipynb#L126">√</a></td>
+                <td><a href="https://phylovelo.readthedocs.io/en/latest/notebook/getting_start.html#5.-PhyloVelo-pseudotime-analysis">√</a></td>
                 <td><a href="https://velovi.readthedocs.io/en/latest/tutorial.html">√</a></td>
                 <td></td>
                 <td><a href="https://github.com/bowang-lab/DeepVelo/blob/main/examples/figure3.ipynb">√</a></td>
@@ -176,7 +253,7 @@ Downstream Analysis
             <tr>
                 <td>identify key genes/ pathway</td>
                 <td></td>
-                <td><a href="https://scvelo.readthedocs.io/en/stable/DynamicalModeling.html#Cluster-specific-top-likelihood-genes">√</a></td>
+                <td><a href="https://scvelo.readthedocs.io/en/stable/scvelo.tl.rank_velocity_genes.html#scvelo.tl.rank_velocity_genes">√</a></td>
                 <td></td>
                 <td><a href="https://dynamo-release.readthedocs.io/en/latest/_autosummary/dynamo.vf.rank_genes.html#dynamo.vf.rank_genes">√</a></td>
                 <td></td>
@@ -204,7 +281,7 @@ Downstream Analysis
                 <td></td>
                 <td></td>
                 <td><a href="https://velovi.readthedocs.io/en/latest/tutorial.html">√</a></td>
-                <td><a href="https://github.com/Spencerfar/LatentVelo/blob/3cdf02946e53411aad68700ea0bba1254c48ec54/benchmark/real_data/scvelo/scvelo%20dentate%20gyrus.ipynb#L240">√</a></td>
+                <td><a href="https://github.com/Spencerfar/LatentVelo/blob/main/paper_notebooks/Hindbrain.ipynb">√</a></td>
                 <td><a href="https://github.com/bowang-lab/DeepVelo/blob/main/examples/figure2.ipynb">√</a></td>
                 <td></td>
                 <td></td>
@@ -247,7 +324,7 @@ Downstream Analysis
                 <td></td>
                 <td></td>
                 <td></td>
-                <td></td>
+                
             </tr>
             <tr>
                 <td>predict transition path / trajectory</td>
@@ -323,25 +400,59 @@ Downstream Analysis
             </tr>
 
             <!-- Mode 行 (第18行) -->
-            <!-- Mode 行 (第18行) -->
+            
+
             <tr>
-                <th>Mode</th>
-                <td>-</td>
-                <td></td>
-                <td><a href="https://scvelo.readthedocs.io/en/stable/getting_started.html#velocity-tools">deterministic</a>, <a href="https://scvelo.readthedocs.io/en/stable/getting_started.html#velocity-tools">stochastic</a>, <a href="https://scvelo.readthedocs.io/en/stable/DynamicalModeling.html">dynamic</a></td>
-                <td></td>
-                <td><a href="https://dynamo-release.readthedocs.io/en/latest/ten_minutes_to_dynamo.html#learn-dynamics">deterministic</a>, <a href="https://dynamo-release.readthedocs.io/en/latest/ten_minutes_to_dynamo.html#learn-dynamics">stochastic</a></td>
-                <td><a href="https://github.com/welch-lab/VeloVAE/tree/master/notebooks/paper_notebooks/continuous">continuous veloVAE</a>, <a href="https://github.com/welch-lab/VeloVAE/tree/master/notebooks/paper_notebooks/continuous">continuous Full VB</a>, <a href="https://github.com/welch-lab/VeloVAE/tree/master/notebooks/paper_notebooks/discrete">discrete VAE</a>, <a href="https://github.com/welch-lab/VeloVAE/tree/master/notebooks/paper_notebooks/discrete">discrete FullVB</a>, <a href="https://github.com/welch-lab/VeloVAE/tree/master/notebooks/paper_notebooks/branching_ode">branching ODE</a></td>
-                <td></td>
-                <td><a href="https://github.com/StatBiomed/UniTVelo/blob/main/notebooks/Figure2_ErythroidMouse.ipynb">Unified-time</a>, <a href="https://github.com/StatBiomed/UniTVelo/blob/main/notebooks/SuppFig6_Pancreas.ipynb">Independent mode</a></td>
-                <td><a href="https://github.com/aicb-ZhangLabs/deepvelo/blob/main/code/Figure2.ipynb">normal AE</a>, <a href="https://github.com/aicb-ZhangLabs/deepvelo/blob/main/code/Figure2.ipynb">VAE</a></td>
+                <th rowspan="1">Mode</th>
                 <td></td>
                 <td></td>
+                <td>
+                    <a href="https://scvelo.readthedocs.io/en/stable/getting_started.html#velocity-tools">deterministic</a>
+                    <a href="https://scvelo.readthedocs.io/en/stable/getting_started.html#velocity-tools">stochastic</a>
+                    <a href="https://scvelo.readthedocs.io/en/stable/DynamicalModeling.html">dynamic</a>
+                </td>
                 <td></td>
-                <td><a href="https://github.com/Spencerfar/LatentVelo/blob/main/paper_notebooks/Mouse%20erythroid.ipynb">VAE</a>, <a href="https://github.com/Spencerfar/LatentVelo/blob/main/paper_notebooks/Hindbrain.ipynb">annotated VAE</a>, <a href="https://github.com/Spencerfar/LatentVelo/blob/3cdf02946e53411aad68700ea0bba1254c48ec54/latentvelo/models/refine_model.py#L101">RefineODE</a>, <a href="https://github.com/Spencerfar/LatentVelo/blob/main/paper_notebooks/Mouse%20brain%20ATAC.ipynb">ATACRegMode</a></td>
+                <td>
+                    <a href="https://dynamo-release.readthedocs.io/en/latest/ten_minutes_to_dynamo.html#learn-dynamics">deterministic</a>
+                    <a href="https://dynamo-release.readthedocs.io/en/latest/ten_minutes_to_dynamo.html#learn-dynamics">stochastic</a>
+                </td>
+                <td>
+                    <a href="https://github.com/welch-lab/VeloVAE/tree/master/notebooks/paper_notebooks/continuous">continuous veloVAE</a>
+                    <a href="https://github.com/welch-lab/VeloVAE/tree/master/notebooks/paper_notebooks/continuous">continuous Full VB</a>
+                    <a href="https://github.com/welch-lab/VeloVAE/tree/master/notebooks/paper_notebooks/discrete">discrete VAE</a>
+                    <a href="https://github.com/welch-lab/VeloVAE/tree/master/notebooks/paper_notebooks/discrete">discrete FullVB</a>
+                    <a href="https://github.com/welch-lab/VeloVAE/tree/master/notebooks/paper_notebooks/branching_ode">branching ODE</a>
+                </td>
+                <td></td>
+                <td>
+                    <a href="https://github.com/StatBiomed/UniTVelo/blob/main/notebooks/Figure2_ErythroidMouse.ipynb">Unified-time</a>
+                    <a href="https://github.com/StatBiomed/UniTVelo/blob/main/notebooks/SuppFig6_Pancreas.ipynb">Independent mode</a>
+                </td>
+                <td>
+                    <a href="https://github.com/aicb-ZhangLabs/deepvelo/blob/main/code/Figure2.ipynb">normal AE</a>
+                    <a href="https://github.com/aicb-ZhangLabs/deepvelo/blob/main/code/Figure2.ipynb">VAE</a>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                    <a href="https://github.com/Spencerfar/LatentVelo/blob/main/paper_notebooks/Mouse%20erythroid.ipynb">VAE</a>
+                    <a href="https://github.com/Spencerfar/LatentVelo/blob/main/paper_notebooks/Hindbrain.ipynb">annotated VAE</a>
+                    <a href="https://github.com/Spencerfar/LatentVelo/blob/3cdf02946e53411aad68700ea0bba1254c48ec54/latentvelo/models/refine_model.py#L101">RefineODE</a>
+                    <a href="https://github.com/Spencerfar/LatentVelo/blob/main/paper_notebooks/Mouse%20brain%20ATAC.ipynb">ATACRegMode</a>
+                </td>
                 <td></td>
                 <td></td>
                 <td></td>
             </tr>
         </tbody>
     </table>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.custom-table a').forEach(function(link) {
+                link.setAttribute('target', '_blank');
+                link.setAttribute('rel', 'noopener noreferrer');
+            });
+        });
+    </script>
+    </div>

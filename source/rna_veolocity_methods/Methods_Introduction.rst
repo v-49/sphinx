@@ -166,3 +166,17 @@ Methods Introduction
      - 
      - 
      - 
+
+.. raw:: html
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 获取所有链接
+            var links = document.getElementsByTagName('a');
+            // 为每个链接添加target="_blank"属性
+            for(var i = 0; i < links.length; i++) {
+                links[i].setAttribute('target', '_blank');
+                links[i].setAttribute('rel', 'noopener noreferrer');
+            }
+        });
+    </script>

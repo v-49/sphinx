@@ -5,7 +5,7 @@ Framework and Datasets
 
     .. image:: ../images/framework.png
        :alt: Framework and Datasets
-       :width: 100%
+       :width: 80%
 
 .. container:: spacer100
 

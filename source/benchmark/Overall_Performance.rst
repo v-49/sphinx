@@ -5,7 +5,7 @@ Overall Performance
 
     .. image:: ../images/score.png
        :alt: Overall Performance
-       :width: 90%
+       :width: 70%
 
 .. container:: spacer100
 

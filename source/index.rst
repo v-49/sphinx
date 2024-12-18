@@ -6,7 +6,7 @@ VeloGIF - Integration tool of 15 RNA velocity methods
     .. image:: /images/ph1.png
        :alt: 项目首页图片
        :align: center
-       :width: 100%
+       :width: 80%
 
 .. container:: spacer
 
@@ -52,16 +52,16 @@ VeloGIF - Integration tool of 15 RNA velocity methods
    :maxdepth: 2
    :caption: RNA VELOCITY METHODS
 
-   rnaveolocity_methods/introduction
-   rnaveolocity_methods/input_data_requirement
-   rnaveolocity_methods/function
+   rna_veolocity_methods/Methods_Introduction
+   rna_veolocity_methods/Input_Data_Requirement
+   rna_veolocity_methods/Downstream_Analysis
 
 .. toctree::
    :maxdepth: 2
    :caption: BENCHMARK
 
-   benchmark/framework
-   benchmark/performance
+   benchmark/Framework_and_Datasets
+   benchmark/Overall_Performance
 
 .. container:: spacer100
 
