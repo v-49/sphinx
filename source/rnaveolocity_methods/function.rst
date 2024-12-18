@@ -3,52 +3,35 @@ Downstream Analysis
 
 .. raw:: html
 
+    <div style="width: 100%; overflow-x: auto;">
     <table border="1" cellspacing="0" cellpadding="5">
         <thead>
             <tr>
-                <th>功能类别</th>
-                <th>功能名称</th>
-                <th>列3</th>
-                <th>列4</th>
-                <th>列5</th>
-                <th>列6</th>
-                <th>列7</th>
-                <th>列8</th>
-                <th>列9</th>
-                <th>列10</th>
-                <th>列11</th>
-                <th>列12</th>
-                <th>列13</th>
-                <th>列14</th>
-                <th>列15</th>
-                <th>列16</th>
-                <th>列17</th>
+                <td>all</td>
+                <td>name</td>
+                <td>velocyto</td>
+                <td>scVelo</td>
+                <td>VeloAE</td>
+                <td>dynamo</td>
+                <td>VeloVAE</td>
+                <td>MultiVelo</td>
+                <td>UniTVelo</td>
+                <td>DeepVelo (VAE)</td>
+                <td>cellDancer</td>
+                <td>PhyloVelo</td>
+                <td>veloVI</td>
+                <td>LatentVelo</td>
+                <td>DeepVelo (GCN)</td>
+                <td>TFvelo</td>
+                <td>STT</td>
             </tr>
         </thead>
         <tbody>
             <!-- Basic Function 部分 (第2至11行) -->
             <tr>
                 <th rowspan="10">Basic Function</th>
-                <td>功能1</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>功能2</td>
-                <td></td>
+                <td>compute u & s exp matrix</td>
+                <td><a href="https://scvelo.readthedocs.io/en/stable/DynamicalModeling.html">√</a></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -65,16 +48,88 @@ Downstream Analysis
                 <td></td>
             </tr>
             <tr>
-                <td>功能3</td>
+                <td>filter and normalize</td>
+                <td><a href="http://velocyto.org/velocyto.py/tutorial/analysis.html#start-a-new-analysis-preliminary-filtering">√</a></td>
+                <td><a href="https://github.com/velocyto-team/velocyto-notebooks/blob/master/python/DentateGyrus.ipynb">√</a></td>
+                <td></td>
+                <td><a href="https://dynamo-release.readthedocs.io/en/latest/ten_minutes_to_dynamo.html#preprocess-data">√</a></td>
+                <td><a href="https://github.com/welch-lab/VeloVAE/blob/master/notebooks/velovae_example.ipynb">√</a></td>
+                <td><a href="https://github.com/welch-lab/MultiVelo/blob/main/Examples/MultiVelo_Demo.ipynb">√</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="https://phylovelo.readthedocs.io/en/latest/notebook/C.elegans_demo.html">√</a></td>
+                <td></td>
+                <td><a href="https://github.com/Spencerfar/LatentVelo/blob/3cdf02946e53411aad68700ea0bba1254c48ec54/paper_notebooks/Dentate%20gyrus.ipynb">√</a></td>
+                <td></td>
+                <td><a href="https://github.com/xiaoyeye/TFvelo/blob/main/TFvelo_run_demo.py">√</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>compute cell x gene velocity matrix</td>
+                <td><a href="http://velocyto.org/velocyto.py/tutorial/analysis.html#gamma-fit-and-extrapolation">√</a></td>
+                <td><a href="https://scvelo.readthedocs.io/en/stable/DynamicalModeling.html">√</a></td>
+                <td></td>
+                <td><a href="https://dynamo-release.readthedocs.io/en/latest/ten_minutes_to_dynamo.html#velocity-vectors">√</a></td>
+                <td><a href="https://github.com/welch-lab/VeloVAE/blob/master/notebooks/velovae_example.ipynb">√</a></td>
+                <td><a href="https://github.com/welch-lab/MultiVelo/blob/main/Examples/MultiVelo_Demo.ipynb">√</a></td>
+                <td><a href="https://github.com/StatBiomed/UniTVelo/blob/main/notebooks/Figure2_ErythroidMouse.ipynb">√</a></td>
+                <td><a href="https://github.com/aicb-ZhangLabs/deepvelo/blob/main/code/Figure2.ipynb">√</a></td>
+                <td><a href="https://guangyuwanglab2021.github.io/cellDancer_website/notebooks/case_study_gastrulation.html">√</a></td>
+                <td><a href="https://phylovelo.readthedocs.io/en/latest/notebook/C.elegans_demo.html">√</a></td>
+                <td><a href="https://velovi.readthedocs.io/en/latest/tutorial.html">√</a></td>
+                <td><a href="https://github.com/Spencerfar/LatentVelo/blob/3cdf02946e53411aad68700ea0bba1254c48ec54/paper_notebooks/Dentate%20gyrus.ipynb">√</a></td>
+                <td><a href="https://github.com/bowang-lab/DeepVelo/blob/main/examples/figure2.ipynb">√</a></td>
+                <td><a href="https://github.com/xiaoyeye/TFvelo/blob/main/TFvelo_run_demo.py">√</a></td>
+                <td><a href="https://github.com/cliffzhou92/STT/blob/release/example_notebooks/example-bone-marrow.ipynb">√</a></td>
+            </tr>
+            <tr>
+                <td>compute unsplice velocity</td>
+                <td></td>
+                <td><a href="https://scvelo.readthedocs.io/en/stable/DynamicalModeling.html">√</a></td>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
+                <td><a href="https://guangyuwanglab2021.github.io/cellDancer_website/notebooks/case_study_gastrulation.html">√</a></td>
+                <td></td>
+                <td><a href="https://velovi.readthedocs.io/en/latest/tutorial.html">√</a></td>
+                <td><a href="https://github.com/Spencerfar/LatentVelo/blob/3cdf02946e53411aad68700ea0bba1254c48ec54/paper_notebooks/Dentate%20gyrus.ipynb">√</a></td>
+                <td><a href="https://github.com/bowang-lab/DeepVelo/blob/main/examples/figure2.ipynb">√</a></td>
+                <td></td>
+                <td><a href="https://github.com/cliffzhou92/STT/blob/release/example_notebooks/example-bone-marrow.ipynb">√</a></td>
+            </tr>
+            <tr>
+                <td>simulatite data</td>
+                <td></td>
+                <td><a href="https://github.com/theislab/scvelo_notebooks/blob/master/perspectives/Perspectives_parameters.ipynb">√</a></td>
+                <td></td>
+                <td><a href="https://dynamo-release.readthedocs.io/en/latest/API.html#simulation-sim">√</a></td>
                 <td></td>
                 <td></td>
                 <td></td>
+                <td></td>
+                <td><a href="https://guangyuwanglab2021.github.io/cellDancer_website/celldancer.simulation.simulate.html">√</a></td>
+                <td><a href="https://phylovelo.readthedocs.io/en/latest/autoapi/phylovelo/sim_utils/index.html">√</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="https://github.com/xiaoyeye/TFvelo/blob/main/simulation/TFvelo_synthetic_demo.py">√</a></td>
+                <td><a href="https://github.com/cliffzhou92/STT/blob/1a1e61e4848002bf127670a198844cb11fd067a5/data/emt_sim/functions_emt.py#L78">√</a></td>
+            </tr>
+            <tr>
+                <td>compute transition probability</td>
+                <td><a href="http://velocyto.org/velocyto.py/tutorial/analysis.html#projection-of-velocity-onto-embeddings">√</a></td>
+                <td><a href="https://scvelo.readthedocs.io/en/stable/scvelo.utils.get_transition_matrix.html#scvelo.utils.get_transition_matrix">√</a></td>
+                <td></td>
+                <td><a href="https://dynamo-release.readthedocs.io/en/latest/ten_minutes_to_dynamo.html#velocity-vectors">√</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="https://guangyuwanglab2021.github.io/cellDancer_website/notebooks/case_study_gastrulation.html">√</a></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -83,128 +138,74 @@ Downstream Analysis
                 <td></td>
             </tr>
             <tr>
-                <td>功能4</td>
+                <td>compute low-dim velocity</td>
+                <td><a href="http://velocyto.org/velocyto.py/tutorial/analysis.html#projection-of-velocity-onto-embeddings">√</a></td>
+                <td><a href="https://scvelo.readthedocs.io/en/stable/VelocityBasics.html#Estimate-RNA-velocity">√</a></td>
+                <td><a href="https://github.com/qiaochen/VeloAE/tree/main/notebooks">√</a></td>
+                <td><a href="https://dynamo-release.readthedocs.io/en/latest/ten_minutes_to_dynamo.html#velocity-vectors">√</a></td>
+                <td><a href="https://github.com/welch-lab/VeloVAE/blob/master/notebooks/velovae_example.ipynb">√</a></td>
+                <td><a href="https://github.com/welch-lab/MultiVelo/blob/main/Examples/MultiVelo_Demo.ipynb">√</a></td>
+                <td></td>
+                <td></td>
+                <td><a href="https://guangyuwanglab2021.github.io/cellDancer_website/notebooks/case_study_gastrulation.html">√</a></td>
+                <td><a href="https://phylovelo.readthedocs.io/en/latest/notebook/C.elegans_demo.html">√</a></td>
                 <td></td>
                 <td></td>
                 <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>功能5</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td><a href="https://github.com/xiaoyeye/TFvelo/blob/main/TFvelo_demo.ipynb">√</a></td>
                 <td></td>
             </tr>
             <tr>
-                <td>功能6</td>
+                <td>compute pseudotime / latent time</td>
+                <td><a href="https://github.com/velocyto-team/velocyto-notebooks/blob/master/python/hgForebrainGlutamatergic.ipynb">√</a></td>
+                <td><a href="https://scvelo.readthedocs.io/en/stable/scvelo.utils.get_transition_matrix.html#scvelo.utils.get_transition_matrix">√</a></td>
                 <td></td>
                 <td></td>
+                <td><a href="https://github.com/welch-lab/VeloVAE/blob/master/notebooks/velovae_example.ipynb">√</a></td>
+                <td><a href="https://github.com/welch-lab/MultiVelo/blob/main/Examples/MultiVelo_Demo.ipynb">√</a></td>
                 <td></td>
                 <td></td>
+                <td><a href="https://guangyuwanglab2021.github.io/cellDancer_website/notebooks/case_study_gastrulation.html">√</a></td>
+                <td><a href="https://github.com/kunwang34/PhyloVelo/blob/c46fc3223b27c5edfd737878bde4ddbc7e634b9b/docs/source/notebook/getting_start.ipynb#L126">√</a></td>
+                <td><a href="https://velovi.readthedocs.io/en/latest/tutorial.html">√</a></td>
                 <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>功能7</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td><a href="https://github.com/bowang-lab/DeepVelo/blob/main/examples/figure3.ipynb">√</a></td>
+                <td><a href="https://github.com/xiaoyeye/TFvelo/blob/main/TFvelo_demo.ipynb">√</a></td>
                 <td></td>
             </tr>
             <tr>
-                <td>功能8</td>
+                <td>identify key genes/ pathway</td>
+                <td></td>
+                <td><a href="https://scvelo.readthedocs.io/en/stable/DynamicalModeling.html#Cluster-specific-top-likelihood-genes">√</a></td>
+                <td></td>
+                <td><a href="https://dynamo-release.readthedocs.io/en/latest/_autosummary/dynamo.vf.rank_genes.html#dynamo.vf.rank_genes">√</a></td>
+                <td></td>
+                <td></td>
+                <td><a href="https://github.com/StatBiomed/UniTVelo/blob/main/notebooks/Figure2_ErythroidMouse.ipynb">√</a></td>
                 <td></td>
                 <td></td>
                 <td></td>
+                <td><a href="https://github.com/YosefLab/velovi_reproducibility/blob/main/notebooks/case_studies/dentategyrus.ipynb">√</a></td>
+                <td><a href="https://github.com/Spencerfar/LatentVelo/paper_notebooks/Latentvelo.ipynb">√</a></td>
+                <td><a href="https://github.com/bowang-lab/DeepVelo/blob/main/examples/incorporate_cellrank.ipynb">√</a></td>
                 <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td><a href="https://github.com/cliffzhou92/STT/blob/release/example_notebooks/example-emt.ipynb">√</a></td>
             </tr>
             <tr>
-                <td>功能9</td>
+                <td>evaluate velocity</td>
+                <td></td>
+                <td><a href="https://scvelo.readthedocs.io/en/stable/VelocityBasics.html#Speed-and-coherence">√</a></td>
+                <td><a href="https://github.com/qiaochen/VeloAE/tree/main/notebooks">√</a></td>
+                <td><a href="https://dynamo-release.readthedocs.io/en/latest/_autosummary/dynamo.tl.cell_wise_confidence.html#dynamo.tl.cell_wise_confidence">√</a></td>
+                <td><a href="https://github.com/welch-lab/VeloVAE/blob/master/notebooks/velovae_example.ipynb">√</a></td>
+                <td></td>
+                <td><a href="https://github.com/StatBiomed/UniTVelo/blob/main/notebooks/Figure2_ErythroidMouse.ipynb">√</a></td>
                 <td></td>
                 <td></td>
                 <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>功能10</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td><a href="https://velovi.readthedocs.io/en/latest/tutorial.html">√</a></td>
+                <td><a href="https://github.com/Spencerfar/LatentVelo/blob/3cdf02946e53411aad68700ea0bba1254c48ec54/benchmark/real_data/scvelo/scvelo%20dentate%20gyrus.ipynb#L240">√</a></td>
+                <td><a href="https://github.com/bowang-lab/DeepVelo/blob/main/examples/figure2.ipynb">√</a></td>
                 <td></td>
                 <td></td>
             </tr>
@@ -212,29 +213,11 @@ Downstream Analysis
             <!-- Extended Function 部分 (第12至17行) -->
             <tr>
                 <th rowspan="6">Extended Function</th>
-                <td>功能1</td>
+                <td>find root / end points</td>
+                <td><a href="https://github.com/velocyto-team/velocyto-notebooks/blob/master/python/DentateGyrus.ipynb">√</a></td>
+                <td><a href="https://scvelo.readthedocs.io/en/stable/scvelo.tl.terminal_states.html#scvelo.tl.terminal_states">√</a></td>
                 <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>功能2</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td><a href="https://dynamo-release.readthedocs.io/en/latest/_autosummary/dynamo.pd.andecestor.html#dynamo.pd.andecestor">√</a></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -248,11 +231,48 @@ Downstream Analysis
                 <td></td>
             </tr>
             <tr>
-                <td>功能3</td>
+                <td>predict in silico perturbation </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="https://dynamo-release.readthedocs.io/en/latest/notebooks/perturbation_tutorial/perturbation_tutorial.html">√</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="https://github.com/aicb-ZhangLabs/deepvelo/blob/main/code/Figure2.ipynb">√</a></td>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>predict transition path / trajectory</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="https://dynamo-release.readthedocs.io/en/latest/notebooks/lap_tutorial/lap_tutorial.html">√</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="https://github.com/aicb-ZhangLabs/deepvelo/blob/main/code/Figure2.ipynb">√</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="https://github.com/Spencerfar/LatentVelo/blob/main/paper_notebooks/Gastrulation.ipynb">√</a></td>
+                <td></td>
+                <td></td>
+                <td><a href="https://github.com/cliffzhou92/STT/blob/1a1e61e4848002bf127670a198844cb11fd067a5/README.md?plain=1#L34">√</a></td>
+            </tr>
+            <tr>
+                <td>reconstruct vector field</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="https://dynamo-release.readthedocs.io/en/latest/ten_minutes_to_dynamo.html#vector-field-reconstruction">√</a></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -266,7 +286,7 @@ Downstream Analysis
                 <td></td>
             </tr>
             <tr>
-                <td>功能4</td>
+                <td>correct batch effect</td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -278,37 +298,19 @@ Downstream Analysis
                 <td></td>
                 <td></td>
                 <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>功能5</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td><a href="https://github.com/Spencerfar/LatentVelo/blob/main/paper_notebooks/Bifurcation%20batch%20correction.ipynb">√</a></td>
                 <td></td>
                 <td></td>
                 <td></td>
             </tr>
             <tr>
-                <td>功能6</td>
+                <td>epigenome–transcriptome interactions</td>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
-                <td></td>
+                <td><a href="https://github.com/welch-lab/MultiVelo/blob/main/Examples/MultiVelo_Demo.ipynb">√</a></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -324,23 +326,22 @@ Downstream Analysis
             <!-- Mode 行 (第18行) -->
             <tr>
                 <th>Mode</th>
-                <td>模式1</td>
-                <td>模式2</td>
-                <td>模式3</td>
-                <td>模式4</td>
-                <td>模式5</td>
-                <td>模式6</td>
-                <td>模式7</td>
-                <td>模式8</td>
-                <td>模式9</td>
-                <td>模式10</td>
-                <td>模式11</td>
-                <td>模式12</td>
-                <td>模式13</td>
-                <td>模式14</td>
-                <td>模式15</td>
-                <td>模式16</td>
-                
+                <td>-</td>
+                <td></td>
+                <td><a href="https://scvelo.readthedocs.io/en/stable/getting_started.html#velocity-tools">deterministic</a>, <a href="https://scvelo.readthedocs.io/en/stable/getting_started.html#velocity-tools">stochastic</a>, <a href="https://scvelo.readthedocs.io/en/stable/DynamicalModeling.html">dynamic</a></td>
+                <td></td>
+                <td><a href="https://dynamo-release.readthedocs.io/en/latest/ten_minutes_to_dynamo.html#learn-dynamics">deterministic</a>, <a href="https://dynamo-release.readthedocs.io/en/latest/ten_minutes_to_dynamo.html#learn-dynamics">stochastic</a></td>
+                <td><a href="https://github.com/welch-lab/VeloVAE/tree/master/notebooks/paper_notebooks/continuous">continuous veloVAE</a>, <a href="https://github.com/welch-lab/VeloVAE/tree/master/notebooks/paper_notebooks/continuous">continuous Full VB</a>, <a href="https://github.com/welch-lab/VeloVAE/tree/master/notebooks/paper_notebooks/discrete">discrete VAE</a>, <a href="https://github.com/welch-lab/VeloVAE/tree/master/notebooks/paper_notebooks/discrete">discrete FullVB</a>, <a href="https://github.com/welch-lab/VeloVAE/tree/master/notebooks/paper_notebooks/branching_ode">branching ODE</a></td>
+                <td></td>
+                <td><a href="https://github.com/StatBiomed/UniTVelo/blob/main/notebooks/Figure2_ErythroidMouse.ipynb">Unified-time</a>, <a href="https://github.com/StatBiomed/UniTVelo/blob/main/notebooks/SuppFig6_Pancreas.ipynb">Independent mode</a></td>
+                <td><a href="https://github.com/aicb-ZhangLabs/deepvelo/blob/main/code/Figure2.ipynb">normal AE</a>, <a href="https://github.com/aicb-ZhangLabs/deepvelo/blob/main/code/Figure2.ipynb">VAE</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="https://github.com/Spencerfar/LatentVelo/blob/main/paper_notebooks/Mouse%20erythroid.ipynb">VAE</a>, <a href="https://github.com/Spencerfar/LatentVelo/blob/main/paper_notebooks/Hindbrain.ipynb">annotated VAE</a>, <a href="https://github.com/Spencerfar/LatentVelo/blob/3cdf02946e53411aad68700ea0bba1254c48ec54/latentvelo/models/refine_model.py#L101">RefineODE</a>, <a href="https://github.com/Spencerfar/LatentVelo/blob/main/paper_notebooks/Mouse%20brain%20ATAC.ipynb">ATACRegMode</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
         </tbody>
     </table>
