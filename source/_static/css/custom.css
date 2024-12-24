@@ -4,8 +4,8 @@
     gap: 20px;
 }
 
-.image-container, .text-container {
-    flex: 1;
+.image-container {
+    width:495px;
 }
 
 .image-container img {
@@ -16,6 +16,7 @@
 }
 
 .text-container {
+    flex: 1;
     font-size: 1em;
     line-height: 1.6;
 }
