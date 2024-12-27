@@ -52,9 +52,9 @@ VeloGIF - Integration tool of 15 RNA velocity methods
    :maxdepth: 2
    :caption: RNA VELOCITY METHODS
 
-   rna_veolocity_methods/Methods_Introduction
-   rna_veolocity_methods/Input_Data_Requirement
-   rna_veolocity_methods/Downstream_Analysis
+   rna_velocity_methods/Methods_Introduction
+   rna_velocity_methods/input_data_requirement
+   rna_velocity_methods/Downstream_Analysis
 
 .. toctree::
    :maxdepth: 2
