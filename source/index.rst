@@ -46,7 +46,7 @@ VeloGIF - Integration tool of 15 RNA velocity methods
    :caption: TUTORIALS
 
    tutorials/getting_started
-   tutorials/other_vignettes
+   tutorials/Default_Parameters
 
 .. toctree::
    :maxdepth: 2
