@@ -10,7 +10,7 @@ build:
 sphinx:
   configuration: source/conf.py  # 请确保 conf.py 文件路径正确
 
-# 指定要安装的依赖项（如果有其他工具需求，如 Node.js，请加入相应配置）
+# 指定要安装的依赖项
 python:
   install:
     - requirements: requirements.txt
@@ -18,4 +18,4 @@ python:
 # 可选，生成其他文档格式，例如 PDF 或 EPUB，如果不需要可以不配置
 # formats:
 #   - pdf
-#   - epub 
+#   - epub
