@@ -1,23 +1,19 @@
-# .readthedocs.yaml
-
 version: 2
 
-# 设置构建环境
 build:
-  os: ubuntu-22.04
+  os: linux
   tools:
-    python: "3.8"
+    python: "3.8.20"
+  jobs:
+    install:
+      - method: python
+        path: .
+        command:
+          - python -m pip install --upgrade pip setuptools
+          - python -m pip install --upgrade sphinx
+          - python -m pip install --exists-action=w --no-cache-dir -r requirements.txt
+    build:
+      - sphinx-build -T -b html -d _build/doctrees -D language=en . _build/html
 
-# 指定 Sphinx 配置文件路径
-sphinx:
-  configuration: source/conf.py  # 请确保 conf.py 文件路径正确
-
-# 指定要安装的依赖项（如果有其他工具需求，如 Node.js，请加入相应配置）
-python:
-  install:
-    - requirements: requirements.txt
-
-# 可选，生成其他文档格式，例如 PDF 或 EPUB，如果不需要可以不配置
-# formats:
-#   - pdf
-#   - epub
+formats:
+  - html
