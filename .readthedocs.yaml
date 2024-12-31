@@ -1,3 +1,5 @@
+# .readthedocs.yaml
+
 version: 2
 
 # 设置构建环境
@@ -18,4 +20,4 @@ python:
 # 可选，生成其他文档格式，例如 PDF 或 EPUB，如果不需要可以不配置
 # formats:
 #   - pdf
-#   - epub 
+#   - epub
