@@ -3,7 +3,7 @@ version: 2
 build:
   os: linux
   tools:
-    python: "3.8.20"
+    python: "3.8"
   jobs:
     install:
       - method: python
