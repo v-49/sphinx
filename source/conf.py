@@ -14,6 +14,7 @@ extensions = [
     # 在此添加其他需要的扩展，例如：
     # "sphinx.ext.autodoc",
     # "sphinx.ext.napoleon",
+    'sphinx_copybutton',
 ]
 
 templates_path = ['_templates']
@@ -44,4 +45,5 @@ html_context = {
     'github_repo': 'VeloGIF',  # GitHub 仓库名
     'github_version': 'main/',  # 分支及文档路径
     'conf_py_path': '/source/',  # 配置文件路径
+    'github_url': 'https://github.com/liyarubio/VeloGIF',  # 直接指定跳转的 URL
 }

@@ -1,88 +1,76 @@
 .. _main_installation:
 
 Installation
-============
+===============================
 
-This section guides you through the installation of all dependencies required for the Velogif project, including Docker and the NVIDIA Container Toolkit (if CUDA acceleration is needed).
+This section guides you through the installation of all dependencies required for the VeloGIF project, including Docker and the NVIDIA Container Toolkit (optional, for CUDA acceleration).
 
-### 1. Install Docker (Required)
+1. Install Docker (Required)
+-------------------------------------------------------------------------------------------
 
-1. Visit the [Docker official website](https://www.docker.com/products/docker-desktop/) and download the latest version of Docker.
+1. Visit the |docker_link| and download Docker.
 
-2. Follow the specific installation guide for your operating system (Windows, macOS, or Linux):
+.. |docker_link| raw:: html
 
-   - **Windows**: Download the Docker Desktop installer, run the installation, and follow the prompts to complete it. After installation, enable the WSL 2 feature.
+   <a href="https://www.docker.com/" target="_blank">Docker official website</a>
 
-   - **macOS**: Download the Docker Desktop version for either Apple Silicon or Intel chips, and run the installer to complete the installation.
-
-   - **Linux**: Use the following commands to install Docker (example for Ubuntu):
-
-     .. code-block:: bash
-
-         sudo apt-get update
-         sudo apt-get install -y ca-certificates curl gnupg
-         sudo install -m 0755 -d /etc/apt/keyrings
-         curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
-         echo \
-           "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
-           $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-         sudo apt-get update
-         sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-
-3. Start the Docker service (Linux only):
+2. Add Docker permissions to the current user:
 
    .. code-block:: bash
 
-       sudo systemctl start docker
-       sudo systemctl enable docker
+       sudo groupadd docker
+       sudo gpasswd -a ${USER} docker
+       sudo service docker restart
 
-4. Verify that Docker is running correctly:
+3. Verify that Docker is running correctly:
 
    .. code-block:: bash
 
        docker --version
 
-### 2. Install NVIDIA Container Toolkit (For CUDA Acceleration)
+2. Install NVIDIA Container Toolkit (Optional, For CUDA Acceleration)
+-------------------------------------------------------------------------------------------
 
-If you need to use GPU and CUDA, install the NVIDIA Container Toolkit.
+If you need to use GPU and CUDA, install the |nvidia_link|. Ensure that your system has NVIDIA drivers installed and that CUDA is properly configured.
 
-1. Ensure that your system has NVIDIA drivers installed and that CUDA is properly configured.
+.. |nvidia_link| raw:: html
 
-   - You can check if the NVIDIA drivers are available using the following command:
+   <a href="https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html" target="_blank">NVIDIA Container Toolkit</a>
 
-     .. code-block:: bash
-
-         nvidia-smi
-
-2. Install the NVIDIA Container Toolkit:
-
-   - Add NVIDIA's package repository:
-
-     .. code-block:: bash
-
-         distribution=$(. /etc/os-release;echo $ID$VERSION_ID) \
-         && curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg \
-         && curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | \
-             sudo tee /etc/apt/sources.list.d/nvidia-container-toolkit.list
-
-   - Update the package list and install the NVIDIA Container Toolkit:
-
-     .. code-block:: bash
-
-         sudo apt-get update
-         sudo apt-get install -y nvidia-container-toolkit
-
-   - Configure the container runtime and restart Docker:
-
-     .. code-block:: bash
-
-         sudo nvidia-ctk runtime configure --runtime=docker
-         sudo systemctl restart docker
-
-3. Test if the GPU is working correctly within the container:
+1. You can check if the NVIDIA drivers are available using the following command:
 
    .. code-block:: bash
 
-       docker run --rm --gpus all nvidia/cuda:12.2.0-base nvidia-smi
+       nvidia-smi
 
-   If the above command outputs GPU information, the installation is successful.
+3. Set the Image Repository and Pull the Image
+-------------------------------------------------------------------------------------------
+
+1. Configure the provided image repository address and account information, then pull the required Docker image:
+
+   .. code-block:: bash
+
+       docker pull your_repository/velogif:latest
+
+2. Check local images and ensure that the VeloGIF image is successfully pulled:
+
+   .. code-block:: bash
+
+       docker images
+
+4. Download the Scripts and Extract Files
+-------------------------------------------------------------------------------------------
+
+1. Download the scripts from the |velogif_link|.
+
+.. |velogif_link| raw:: html
+
+   <a href="https://codeload.github.com/liyarubio/VeloGIF/zip/refs/heads/main?token=BBN3X4CK6LC6CPKXHCPTKXDHO6YBA" target="_blank">VeloGIF GitHub repository</a>
+
+2. Extract the downloaded files:
+
+   .. code-block:: bash
+
+       unzip VeloGIF-main.zip
+       cd VeloGIF-main
+       unzip tools.zip
