@@ -89,7 +89,7 @@ Downstream Analysis
                 <th>velocyto</th>
                 <th>scVelo</th>
                 <th>VeloAE</th>
-                <th>dynamo</th>
+                <th>Dynamo</th>
                 <th>VeloVAE</th>
                 <th>MultiVelo</th>
                 <th>UniTVelo</th>

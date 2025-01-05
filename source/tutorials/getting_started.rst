@@ -3,7 +3,7 @@
 Getting Started
 ==========================
 
-1. Start the Container (Mount GPU and Specify Directory)
+1. Start the Container and Mount Local Directories
 ----------------------------------------------------------------------------------------------------------------------
 
 - Start the container using the following command, mounting the GPU and specifying the directory:
@@ -16,13 +16,14 @@ Getting Started
 
   .. code-block:: bash
 
-      docker run -d --gpus all --name velogif -v /Your_Path/VeloGIF-main:/velogif your_repository/velogif:latest
+      docker run -d --gpus all --name velogif -v /Your_Path/VeloGIF-main:/velogif velogif-registry.ap-southeast-1.cr.aliyuncs.com/velogif/velogif:latest
 
 - eg. Without GPU:
 
   .. code-block:: bash
 
-      docker run -d --name velogif -v /Your_Path/VeloGIF-main:/velogif your_repository/velogif:latest
+      docker run -d --name velogif -v /Your_Path/VeloGIF-main:/velogif velogif-registry.ap-southeast-1.cr.aliyuncs.com/velogif/velogif:latest
+
 
 2. Access the Container Console
 ---------------------------------------------------------------------------------------------
@@ -207,16 +208,4 @@ Evaluation
     ├── velovae.h5ad
     └── velovi.h5ad
 
-Contact Us
-===================
 
-If you have any questions or suggestions, please contact the project maintainers:
-
-- Email: bio_liyaru@163.com
-- GitHub Repository: |github_repo|
-
-.. |github_repo| raw:: html
-
-   <a href="https://github.com/liyarubio/VeloGIF" target="_blank">https://github.com/liyarubio/VeloGIF</a>
-
-Thank you for your support and usage!

@@ -26,7 +26,7 @@ VeloGIF - Integration tool of 15 RNA velocity methods
 
       .. raw:: html
 
-          <span class="large-text">Our benchmark of RNA velocity indicated a significant complementarity among the various methods, leading us to propose an integration tool, VeloGIF. VeloGIF allows users to concurrently obtain the computation results of 15 various RNA velocity methods, as well as visualization and evaluation results, and could select the outcomes that align most closely with the expectations based on prior knowledge. VeloGIF employed Docker container to wrap each method, which avoids dependency issues.</span>
+           <span class="large-text">Our <a href="https://sysomics.com/velogif/benchmark/Framework_and_Datasets.html" target="_blank">benchmark of RNA velocity methods</a> indicated a significant complementarity among the various methods, leading us to propose an integration tool, <strong>VeloGIF</strong>. The <strong>Graphics Interchange Format (GIF)</strong> is a prevalent image file format widely utilized to create live photos due to its excellent compatibility. Our integrated tool employed multiple RNA velocity methods to expand static transcriptional snapshots to dynamic photos, and it is also highly compatible, hence we named it VeloGIF. <strong>VeloGIF</strong> allows users to concurrently obtain the computation results of 15 various RNA velocity methods, as well as visualization and evaluation results, and could select the outcomes that align most closely with the expectations based on prior knowledge. VeloGIF employed <a href="https://www.docker.com/" target="_blank">Docker container</a> to wrap each method, which avoids dependency issues.</span>
 
 .. container:: spacer100
 

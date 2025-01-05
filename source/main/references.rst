@@ -10,7 +10,7 @@ References
 
 [VeloAE] Qiao, C., and Huang, Y. (2021). Representation learning of RNA velocity reveals robust cell transitions. Proc. Natl. Acad. Sci. U.S.A. 118, e2105859118. :raw-html:`<a href="https://doi.org/10.1073/pnas.2105859118" target="_blank">https://doi.org/10.1073/pnas.2105859118</a>`.
 
-[dynamo] Qiu, X., Zhang, Y., Martin-Rufino, J.D., Weng, C., Hosseinzadeh, S., Yang, D., Pogson, A.N., Hein, M.Y., Hoi (Joseph) Min, K., Wang, L., et al. (2022). Mapping transcriptomic vector fields of single cells. Cell 185, 690-711.e45. :raw-html:`<a href="https://doi.org/10.1016/j.cell.2021.12.045" target="_blank">https://doi.org/10.1016/j.cell.2021.12.045</a>`.
+[Dynamo] Qiu, X., Zhang, Y., Martin-Rufino, J.D., Weng, C., Hosseinzadeh, S., Yang, D., Pogson, A.N., Hein, M.Y., Hoi (Joseph) Min, K., Wang, L., et al. (2022). Mapping transcriptomic vector fields of single cells. Cell 185, 690-711.e45. :raw-html:`<a href="https://doi.org/10.1016/j.cell.2021.12.045" target="_blank">https://doi.org/10.1016/j.cell.2021.12.045</a>`.
 
 [VeloVAE] Gu, Y., Blaauw, D.T., and Welch, J. (2022). Variational Mixtures of ODEs for Inferring Cellular Gene Expression Dynamics. In Proceedings of the 39th International Conference on Machine Learning Proceedings of Machine Learning Research., K. Chaudhuri, S. Jegelka, L. Song, C. Szepesvari, G. Niu, and S. Sabato, eds. (PMLR), pp. 7887–7901.
 

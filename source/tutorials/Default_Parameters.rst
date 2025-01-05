@@ -29,7 +29,7 @@ The ``--g-rep-dim`` and ``--k-dim`` parameters were set to 10 in simulation data
 due to the fewer number of genes in these datasets. In other datasets, these two parameters were
 set to 100, which is the default value.
 
-dynamo
+Dynamo
 ------
 We followed the guideline on the dynamo website via
 :raw-html:`<a href="https://dynamo-release.readthedocs.io/en/latest/notebooks/zebrafish.html" target="_blank">https://dynamo-release.readthedocs.io/en/latest/notebooks/zebrafish.html</a>`

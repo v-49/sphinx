@@ -1,20 +1,21 @@
 .. _main_installation:
 
+
+
 Installation
 ===============================
 
-This section guides you through the installation of all dependencies required for the VeloGIF project, including Docker and the NVIDIA Container Toolkit (optional, for CUDA acceleration).
 
 1. Install Docker (Required)
 -------------------------------------------------------------------------------------------
 
-1. Visit the |docker_link| and download Docker.
+• Visit the |docker_link| and download Docker.
 
 .. |docker_link| raw:: html
 
    <a href="https://www.docker.com/" target="_blank">Docker official website</a>
 
-2. Add Docker permissions to the current user:
+• Add Docker permissions to the current user:
 
    .. code-block:: bash
 
@@ -22,7 +23,7 @@ This section guides you through the installation of all dependencies required fo
        sudo gpasswd -a ${USER} docker
        sudo service docker restart
 
-3. Verify that Docker is running correctly:
+• Verify that Docker is running correctly:
 
    .. code-block:: bash
 
@@ -37,22 +38,30 @@ If you need to use GPU and CUDA, install the |nvidia_link|. Ensure that your sys
 
    <a href="https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html" target="_blank">NVIDIA Container Toolkit</a>
 
-1. You can check if the NVIDIA drivers are available using the following command:
+• You can check if the NVIDIA drivers are available using the following command:
 
    .. code-block:: bash
 
        nvidia-smi
 
+Install the |nvidia_toolkit_link|.
+
+Note that CUDA is required for LatentVelo.
+
+.. |nvidia_toolkit_link| raw:: html
+
+   <a href="https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html" target="_blank">NVIDIA Container Toolkit</a>
+
 3. Set the Image Repository and Pull the Image
 -------------------------------------------------------------------------------------------
 
-1. Configure the provided image repository address and account information, then pull the required Docker image:
+• Configure the provided image repository address and account information, then pull the required Docker image:
 
    .. code-block:: bash
 
-       docker pull your_repository/velogif:latest
+       docker pull velogif-registry.ap-southeast-1.cr.aliyuncs.com/velogif/velogif:latest
 
-2. Check local images and ensure that the VeloGIF image is successfully pulled:
+• Check local images and ensure that the VeloGIF image is successfully pulled:
 
    .. code-block:: bash
 
@@ -61,13 +70,13 @@ If you need to use GPU and CUDA, install the |nvidia_link|. Ensure that your sys
 4. Download the Scripts and Extract Files
 -------------------------------------------------------------------------------------------
 
-1. Download the scripts from the |velogif_link|.
+• Download the scripts from the |velogif_link|.
 
 .. |velogif_link| raw:: html
 
-   <a href="https://codeload.github.com/liyarubio/VeloGIF/zip/refs/heads/main?token=BBN3X4CK6LC6CPKXHCPTKXDHO6YBA" target="_blank">VeloGIF GitHub repository</a>
+   <a href="https://github.com/liyarubio/VeloGIF/archive/refs/heads/main.zip" target="_blank">VeloGIF GitHub repository</a>
 
-2. Extract the downloaded files:
+• Extract the downloaded files:
 
    .. code-block:: bash
 
