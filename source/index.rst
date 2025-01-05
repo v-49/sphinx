@@ -4,7 +4,7 @@ VeloGIF - Integration tool of 15 RNA velocity methods
 .. container:: centered
 
     .. image:: /images/ph1.png
-       :alt: 项目首页图片
+       :alt: main page Image1
        :align: center
        :width: 807px
 
@@ -19,7 +19,7 @@ VeloGIF - Integration tool of 15 RNA velocity methods
    .. container:: image-container
 
       .. image:: images/ph2.png
-         :alt: main page Image
+         :alt: main page Image2
          :width: 395px
 
    .. container:: text-container
