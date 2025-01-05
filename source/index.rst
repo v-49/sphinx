@@ -3,7 +3,7 @@ VeloGIF - Integration tool of 15 RNA velocity methods
 
 .. container:: centered
 
-    .. image:: /images/ph1.png
+    .. image:: images/ph1.png
        :alt: main page Image1
        :align: center
        :width: 807px
