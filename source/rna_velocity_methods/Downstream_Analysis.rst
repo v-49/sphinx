@@ -89,7 +89,7 @@ Downstream Analysis
                 <th>velocyto</th>
                 <th>scVelo</th>
                 <th>VeloAE</th>
-                <th>dynamo</th>
+                <th>Dynamo</th>
                 <th>VeloVAE</th>
                 <th>MultiVelo</th>
                 <th>UniTVelo</th>
@@ -263,7 +263,7 @@ Downstream Analysis
                 <td></td>
                 <td></td>
                 <td><a href="https://github.com/YosefLab/velovi_reproducibility/blob/main/notebooks/case_studies/dentategyrus.ipynb">√</a></td>
-                <td><a href="https://github.com/Spencerfar/LatentVelo/paper_notebooks/Latentvelo.ipynb">√</a></td>
+                <td><a href="https://github.com/Spencerfar/LatentVelo/blob/main/paper_notebooks/Gastrulation.ipynb">√</a></td>
                 <td><a href="https://github.com/bowang-lab/DeepVelo/blob/main/examples/incorporate_cellrank.ipynb">√</a></td>
                 <td></td>
                 <td><a href="https://github.com/cliffzhou92/STT/blob/release/example_notebooks/example-emt.ipynb">√</a></td>

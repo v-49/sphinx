@@ -14,6 +14,7 @@ extensions = [
     # 在此添加其他需要的扩展，例如：
     # "sphinx.ext.autodoc",
     # "sphinx.ext.napoleon",
+    'sphinx_copybutton',
 ]
 
 templates_path = ['_templates']
@@ -39,9 +40,9 @@ html_js_files = [
 ]
 # 使用 html_context 配置 GitHub 集成
 html_context = {
-    'display_github': True,  # 启用 GitHub 链接
-    'github_user': 'liyarubio',    # GitHub 用户名
-    'github_repo': 'VeloGIF',  # GitHub 仓库名
-    'github_version': 'main/',  # 分支及文档路径
-    'conf_py_path': '/source/',  # 配置文件路径
+    'display_github': True,
+    'github_user': 'liyarubio',
+    'github_repo': 'VeloGIF',
+    'github_version': 'main',  
+    'conf_py_path': '/sphinx/source/' 
 }

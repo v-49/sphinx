@@ -1,3 +1,49 @@
+.. raw:: html
+
+    <style>
+    /* 表格容器样式 */
+    .wy-table-responsive {
+        overflow-x: auto;
+        position: relative;
+    }
+
+    /* 表格基础样式 */
+    .wy-table-responsive table {
+        margin-bottom: 24px;
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0;
+    }
+
+    /* 首列固定样式 */
+    .wy-table-responsive table th:first-child,
+    .wy-table-responsive table td:first-child {
+        position: sticky;
+        left: 0;
+        background-color: white;
+        z-index: 2;
+        border-right: 2px solid #e1e4e5;
+    }
+
+    /* 表头首列样式 */
+    .wy-table-responsive table th:first-child {
+        background-color: #f3f6f6;
+        z-index: 3;
+    }
+
+    /* 首列阴影效果 */
+    .wy-table-responsive table th:first-child::after,
+    .wy-table-responsive table td:first-child::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -2px;
+        bottom: 0;
+        width: 4px;
+        box-shadow: inset -4px 0 4px -2px rgba(0, 0, 0, 0.1);
+    }
+    </style>
+
 Methods Introduction
 ==============================
 
@@ -46,7 +92,7 @@ Methods Introduction
      - √
      - Torch
      - optional: for velocity constraint
-   * - `dynamo <https://dynamo-release.readthedocs.io/en/latest/index.html>`_
+   * - `Dynamo <https://dynamo-release.readthedocs.io/en/latest/index.html>`_
      - 2022
      - Cell
      - splicing / new + exp / new + u + s
@@ -133,7 +179,7 @@ Methods Introduction
      - neural ODE, batch, variational autoencoder
      - VAE
      - 
-     - 
+     - √
      - Torch
      - 
    * - `DeepVelo (GCN-based) <https://github.com/bowang-lab/DeepVelo>`_
@@ -174,6 +220,18 @@ Methods Introduction
             // 获取所有链接
             var links = document.getElementsByTagName('a');
             // 为每个链接添加target="_blank"属性
+            for(var i = 0; i < links.length; i++) {
+                links[i].setAttribute('target', '_blank');
+                links[i].setAttribute('rel', 'noopener noreferrer');
+            }
+        });
+    </script>
+
+    .. raw:: html
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var links = document.getElementsByTagName('a');
             for(var i = 0; i < links.length; i++) {
                 links[i].setAttribute('target', '_blank');
                 links[i].setAttribute('rel', 'noopener noreferrer');
