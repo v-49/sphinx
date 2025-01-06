@@ -1,7 +1,11 @@
 .image-text-container {
-    display: flex;
+    display: block;
     align-items: center;
     gap: 20px;
+}
+
+.image-container {
+  float: left;
 }
 
 .image-container img {
@@ -17,12 +21,8 @@
     line-height: 1.6;
 }
 
-.wy-nav-content-wrap {
-    padding-right: 100px;
-}
-
 .wy-nav-content {
-    max-width: 1200px !important;
+    max-width: 1000px !important;
     width: auto !important;
 }
 
@@ -36,6 +36,7 @@
     display: block;
     height: 100px;
     margin: 0;
+    clear: both;
 }
 
 .green-bold {
@@ -45,7 +46,7 @@
 }
 
 .large-text {
-    font-size: 1.3em;
+    font-size: 1em;
     color: inherit;
     font-weight: normal;
 }
