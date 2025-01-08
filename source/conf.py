@@ -7,7 +7,7 @@ sys.path.insert(0, os.path.abspath('.'))
 # -- 项目信息 -----------------------------------------------------
 project = 'VeloGIF'
 author = 'Bo Lab'
-copyright = '2024, Bo Lab'
+copyright = '2025, Bo Lab'
 
 # -- 常规配置 ---------------------------------------------------
 extensions = [
